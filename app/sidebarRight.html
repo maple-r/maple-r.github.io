@@ -1,0 +1,98 @@
+<div id="toast"></div>
+<div id="mySidenavR" class="sidenavR">
+	<div class="tab">
+		<button class="tablinks" onclick="openTab(event, 'settings')" id="defaultOpen">셋팅</button>
+		<button class="tablinks" onclick="openTab(event, 'itemList')" >아이템</button>
+	</div>
+	<div id="itemList" class="tabcontent">
+
+	</div>
+	<form method="GET" id="settingForm">
+		<div id="settings" class="tabcontent">
+			<ul>
+				<li>
+					<span>피부</span>
+					<select id="skinId" name="skinId" onchange="javascript:fnCngSkin();">
+						<option value='2000' >크림 피부</option>
+						<option value='2018' >뽀송 라벤더 피부</option>
+						<option value='2019' >홍조 라벤더 피부</option>
+						<option value='2015' >뽀송 꽃잎 피부</option>
+						<option value='2016' >홍조 꽃잎 피부</option>
+						<option value='2004' >스산 피부</option>
+						<option value='2010' >노블레스 피부</option>
+						<option value='2001' >태닝 피부</option>
+						<option value='2003' >밀키 피부</option>
+						<option value='2009' >창백 피부</option>
+						<option value='2013' >데모닉 피부</option>
+						<option value='2002' >헬시 피부</option>
+						<option value='2011' >고져스 피부</option>
+						<option value='2012' >엘프 피부</option>
+					</select>
+				</li>
+				<li>
+					<span>표정</span>
+					<select id="ani" name="ani" onchange="javascript:fnCngAni();">
+						<option value='default' >기본</option>
+						<option value='angry' >버럭</option>
+						<option value='bewildered' >띠용</option>
+						<option value='cheers' >응원</option>
+						<option value='chu' >뽀뽀</option>
+						<option value='cry' >슬픔</option>
+						<option value='glitter' >반짝</option>
+						<option value='hit' >피격</option>
+						<option value='hot' >더운</option>
+						<option value='hum' >의심하는</option>
+						<option value='love' >하트뿅뿅</option>
+						<option value='shine' >안광</option>
+						<option value='smile' >웃음</option>
+						<option value='wink' >윙크</option>
+					</select>
+				</li>
+				<li>
+					<span>자세</span>
+					<select id="pos" name="pos" onchange="javascript:fnPosSkin();">
+						<option value="stand1" >stand1 (한손무기)</option>
+						<option value="stand2" >stand2 (두손무기)</option>
+						<option value="walk1"  >walk1 (한손무기)</option>
+						<option value="walk2"  >walk2 (두손무기)</option>
+						<option value="alert"  >타격</option>
+						<option value="fly"    >플라잉</option>
+						<option value="heal"   >힐링</option>
+						<option value="jump"   >점프</option>
+						<option value="ladder" >사다리</option>
+						<option value="rope"   >줄</option>
+						<option value="prone"  >엎드리기</option>
+						<option value="proneStab">엎드리기 + 공격</option>
+						<option value="shoot1"   >shoot1 (한손무기)</option>
+						<option value="shoot2"   >shoot2 (두손무기)</option>
+						<option value="shootF"   >Shoot</option>
+						<option value="sit"      >앉기</option>
+						<option value="stabO1"   >공격 (01)</option>
+						<option value="stabO2"   >공격 (02)</option>
+						<option value="stabOF"   >공격 (0F)</option>
+						<option value="stabT1"   >공격 (T1)</option>
+						<option value="stabT2"   >공격 (T2)</option>
+						<option value="stabTF"   >공격 (TF)</option>
+						<option value="swingO1"  >휘두르기 (01)</option>
+						<option value="swingO2"  >휘두르기 (02)</option>
+						<option value="swingO3"  >휘두르기 (03)</option>
+						<option value="swingOF"  >휘두르기 (0F)</option>
+						<option value="swingP1"  >휘두르기 (P1)</option>
+						<option value="swingP2"  >휘두르기 (P2)</option>
+						<option value="swingPF"  >휘두르기 (PF)</option>
+						<option value="swingT1"  >휘두르기 (T1)</option>
+						<option value="swingT2"  >휘두르기 (T2)</option>
+						<option value="swingT3"  >휘두르기 (T3)</option>
+						<option value="swingTF"  >휘두르기 (TF)</option>
+					</select>
+				</li>
+				<li class="save-btn" onclick="javascript:imageSaveLocal();">
+					이미지로 저장
+				</li>
+				<!--<li class="save-btn" onclick="javascript:imageSaveMy();">
+					캐릭터 보관함에 추가
+				</li>-->
+			</ul>
+		</div>
+	</form>
+</div>
