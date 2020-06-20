@@ -1,4 +1,4 @@
-$(document).mouseup(function(e){
+$(document).mouseup(function(e){ 
 	var lwth = document.getElementById("mySidenav").style.width;
 	var rwth = document.getElementById("mySidenavR").style.width;
 	//var bwth = document.getElementById("myBottomNav").style.width;
