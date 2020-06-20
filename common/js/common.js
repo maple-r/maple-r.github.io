@@ -13,7 +13,7 @@ $(document).ready(function(){
 	});
 });
 
-let removeToast; 
+let removeToast;
 
 function toast(string) {
 	const toast = document.getElementById("toast");
